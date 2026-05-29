@@ -1,0 +1,94 @@
+/* Toàn bộ trang web với màu nền xám pastel */
+body {
+    background-color: #ecedf3;        /* 1. background-color: Màu xám pastel theo ảnh gốc */
+    font-family: 'Open Sans', sans-serif; /* 2. font-family */
+    margin: 0;
+    padding: 0;
+}
+
+/* Thanh menu màu xanh nhạt trên cùng */
+nav {
+    background-color: #b4d4f5;        /* Màu xanh lam pastel nhạt */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;               /* 3. text-align: Căn giữa menu chữ */
+}
+
+nav ul li {
+    display: inline-block;            /* 4. display: Dàn hàng ngang menu */
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #6c6cf6;                   /* 5. color: Chữ màu xanh đậm */
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Khối biểu ngữ chứa ảnh lớn phía trên */
+.header-banner {
+    padding: 20px;
+    width: 100%;                      /* 6. width */
+}
+
+/* Đẩy ảnh lớn sang bên trái và tạo khoảng trống khổng lồ bên phải */
+.featured-image {
+    width: 250px;                     /* Kích thước chiều rộng chuẩn của ảnh lớn */
+    height: auto;
+    float: left;                      /* Kỹ thuật float cốt lõi của bài tập gốc */
+    margin-bottom: 20px;
+}
+
+/* Xóa dòng hiệu ứng float để tiêu đề nhảy xuống dưới chân ảnh */
+.clear {
+    clear: both;
+}
+
+/* Tiêu đề uốn lượn nghệ thuật "Neighborhood Walks" nằm căn giữa */
+.main-heading {
+    font-family: 'Great Vibes', cursive; /* Font nghệ thuật mềm mại */
+    color: #00008B;
+    text-align: center;
+    font-size: 55px;                  /* 7. font-size */
+    margin: 40px 0 20px 0;
+    line-height: 1.2;                 /* 8. line-height */
+}
+
+/* Khối hộp chữ nhật màu vàng rực rỡ chứa lưới ảnh bên dưới */
+.gallery-container {
+    background-color: #d1dbec;        /* Màu vàng rực chuẩn xác theo ảnh mẫu */
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Chia lưới ảnh nhỏ xếp liền kề nhau: 7 cột ở hàng trên, 3 cột ở hàng dưới */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: calc(14.28% - 9px);        /* Chia đều tỉ lệ để vừa khít 7 ảnh một hàng */
+    height: 140px;
+    object-fit: cover;
+    border: 2px solid #8cb0ea;
+}
+
+/* Phần chữ chân trang footer */
+footer {
+    padding: 20px;
+    background-color: #D3D3D3;
+}
+
+footer p {
+    font-size: 15px;
+    color: #333;
+    margin: 0;
+}
